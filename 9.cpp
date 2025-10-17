@@ -6,9 +6,9 @@ class Matrix {
     int row, col;
 public:
     void input() {
-        cout << "Enter rows and columns: ";
+        cout << "Enter no of rows and columns: ";
         cin >> row >> col;
-        cout << "Enter matrix elements: "<<endl;
+        cout << "Enter  elements: "<<endl;
         for (int i = 0; i < row; i++)
             for (int j = 0; j < col; j++)
                 cin >> mat[i][j];
@@ -23,13 +23,13 @@ public:
     }
 
     Matrix operator+(const Matrix& m) {
-        Matrix temp;
-        temp.row = row;
-        temp.col = col;
+        Matrix q;
+        q.row = row;
+        q.col = col;
         for (int i = 0; i < row; i++)
             for (int j = 0; j < col; j++)
-                temp.mat[i][j] = mat[i][j] + m.mat[i][j];
-        return temp;
+                q.mat[i][j] = mat[i][j] + m.mat[i][j];
+        return q;
     }
 };
 
