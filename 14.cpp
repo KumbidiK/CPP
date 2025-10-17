@@ -8,10 +8,13 @@ protected:
     string course;
 
 public:
-    void setStudent(string n, int r, string c) {
-        name = n;
-        roll = r;
-        course = c;
+    void getDetails() {
+        cout << "Enter name: ";
+        cin >> name;
+        cout << "Enter roll no: ";
+        cin >> roll;
+        cout << "Enter course: ";
+        cin >> course;
     }
 };
 
@@ -20,10 +23,9 @@ protected:
     int mark1, mark2, mark3;
 
 public:
-    void setMarks(int m1, int m2, int m3) {
-        mark1 = m1;
-        mark2 = m2;
-        mark3 = m3;
+    void getMarks() {
+       cout << "Enter 3 marks: ";
+       cin >> mark1 >> mark2 >> mark3;
     }
 };
 
@@ -52,8 +54,8 @@ public:
 
 int main() {
     Result r;
-    r.setStudent("Sahal", 19, "Physics");
-    r.setMarks(60, 75, 69);
+    r.getDetails();
+    r.getMarks();
     r.setBonus(5);
     r.displayResult();
 
