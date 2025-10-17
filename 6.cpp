@@ -31,6 +31,5 @@ int main() {
     TelephoneBill t1;
     t1.input();
     t1.display();
-    cout << "Total Amount to be Paid: Rs. " << computeBill(t1) << "\n";
-    return 0;
+    cout << "Total Amount : Rs. " << computeBill(t1) <<endl;
 }
