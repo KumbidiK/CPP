@@ -2,8 +2,7 @@
 using namespace std;
 
 class Rectangle {
-    int length;
-    int width;
+    int length,width;
 
 public:
     Rectangle() {
@@ -17,17 +16,20 @@ public:
     }
 
     void display() {
-        cout << "Length: " << length << ", Width: " << width << "\n";
+        cout << "Length: " << length << ", Width: " << width << endl;
     }
 
     ~Rectangle() {
-        cout << "Rectangle object destroyed\n";
+        cout << "Rectangle  destroyed "<< endl;
     }
 };
 
 int main() {
+    int len,wid;
     Rectangle r1;
-    Rectangle r2(10, 5);
+    cout<< "Enter length and width of rectangle 2: ";
+    cin>>len>>wid;
+    Rectangle r2(len,wid);
 
     r1.display();
     r2.display();
