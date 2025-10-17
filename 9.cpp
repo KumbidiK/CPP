@@ -34,10 +34,10 @@ public:
 };
 
 int main() {
-    Matrix m1, m2, sum;
+    Matrix m1, m2, s;
     m1.input();
     m2.input();
-    sum = m1 + m2;
+    s = m1 + m2;
     cout << "Sum : "<<endl;
-    sum.display();
+    s.display();
 }
