@@ -21,12 +21,12 @@ public:
 class Student : public Person {
     int roll_number;
 public:
-    void inputDetails() {
+    void inputS() {
         input();
         cout << "Enter roll number: ";
         cin >> roll_number;
     }
-    void showDetails() {
+    void showS() {
         display();
         cout << "Roll Number: " << roll_number << endl;
     }
@@ -34,6 +34,6 @@ public:
 
 int main() {
     Student s;
-    s.inputDetails();
-    s.showDetails();
+    s.inputS();
+    s.showS();
 }
