@@ -8,7 +8,7 @@ public:
     void input() {
         cout << "Enter rows and columns: ";
         cin >> row >> col;
-        cout << "Enter matrix elements:\n";
+        cout << "Enter matrix elements: "<<endl;
         for (int i = 0; i < row; i++)
             for (int j = 0; j < col; j++)
                 cin >> mat[i][j];
@@ -38,6 +38,6 @@ int main() {
     m1.input();
     m2.input();
     sum = m1 + m2;
-    cout << "Sum of matrices:\n";
+    cout << "Sum : "<<endl;
     sum.display();
 }
