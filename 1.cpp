@@ -7,10 +7,14 @@ class Car {
     int year;
 public:
     void read() {
+        cout << "Enter car brand,model and year: ";
         cin >> brand >> model >> year;
     }
     void display() {
-        cout << brand << " " << model << " " << year << "\n";
+        cout << "Brand: "<< brand <<endl;
+        cout << "Model: "<< model <<endl;
+        cout << "Year: " << year <<endl;
+        cout << endl;
     }
 };
 
@@ -22,5 +26,4 @@ int main() {
     c1.display();
     c2.display();
     c3.display();
-    return 0;
 }
