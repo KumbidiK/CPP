@@ -20,9 +20,9 @@ bill()
 float total = price + shipping_charge;
 cout<<"Item : "<<item_name<<endl;
 cout<<"Quantity : "<<quantity<<" nos"<<endl;
-cout<<"Price : $"<<price<<endl;
-cout<<"Shipping Charge : $"<<shipping_charge<<endl;
-cout<<"Total : $"<<total<<endl;
+cout<<"Price : ₹"<<price<<endl;
+cout<<"Shipping Charge : ₹"<<shipping_charge<<endl;
+cout<<"Total : ₹"<<total<<endl;
 }
 };
 int main()
